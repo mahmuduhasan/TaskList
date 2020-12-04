@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskList</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        color: lightseagreen;
+        background: black;
+      }
+      button {
+        background: none;
+        border: 2px solid gray;
+        cursor: pointer;
+        background: lightcyan;
+      }
+      #new-task,
+      #filter-task,
+      button {
+        padding: 8px 16px;
+        outline: none;
+      }
+      #filter-task {
+        margin-top: 20px;
+      }
+      ::placeholder {
+        color: lightseagreen;
+      }
+      #tasks {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Enter Task:</h2>
+    <form id="task-form">
+      <input type="text" id="new-task" placeholder="Enter Task Name" />
+      <button id="add-task">Add Task</button>
+    </form>
+    <input id="filter-task" type="text" placeholder="Search Task" />
+    <h3>Task List:</h3>
+    <ul id="tasks"></ul>
+    <button id="clear">Clear Task</button>
+    <script src="script.js"></script>
+  </body>
+</html>
